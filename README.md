@@ -1,4 +1,4 @@
-<img src="http://fcore.io/css/images/fcash-p2p.svg" alt="bitcore payment protocol" height="35" width="102">
+<img src="http://www.fcash.cash/css/images/fcash-p2p.svg" alt="fcore payment protocol" height="35" width="102">
 
 Fcash P2P
 =======
@@ -7,16 +7,16 @@ Fcash P2P
 [![Build Status](https://img.shields.io/travis/fcash-project/fcash-p2p.svg?branch=master&style=flat-square)](https://travis-ci.org/fcash-project/fcash-p2p)
 [![Coverage Status](https://img.shields.io/coveralls/fcash-project/fcash-p2p.svg?style=flat-square)](https://coveralls.io/r/fcash-project/fcash-p2p?branch=master)
 
-`fcash-p2p` adds [Bitcoin protocol](https://en.bitcoin.it/wiki/Protocol_documentation) support for Fcash.
+`fcash-p2p` adds [Fcash protocol](https://en.bitcoin.it/wiki/Protocol_documentation) support for Fcash.
 
-See [the main fcore repo](https://github.com/fcash-project/bitcore) for more information.
+See [the main fcore repo](https://github.com/fcash-project/fcore) for more information.
 
 ## Getting Started
 
 ```sh
 npm install fcash-p2p
 ```
-In order to connect to the Bitcoin network, you'll need to know the IP address of at least one node of the network, or use [Pool](/docs/pool.md) to discover peers using a DNS seed.
+In order to connect to the Fcash network, you'll need to know the IP address of at least one node of the network, or use [Pool](/docs/pool.md) to discover peers using a DNS seed.
 
 ```javascript
 var Peer = require('fcash-p2p').Peer;
@@ -45,7 +45,7 @@ peer.on('tx', function(message) {
 });
 ```
 
-Take a look at the [bitcore guide](http://fcore.io/guide/peer.html) on the usage of the `Peer` class.
+Take a look at the [fcore guide](http://www.fcash.cash/guide/peer.html) on the usage of the `Peer` class.
 
 ## Contributing
 
@@ -55,4 +55,4 @@ See [CONTRIBUTING.md](https://github.com/fcash-project/fcore/blob/master/CONTRIB
 
 Code released under [the MIT license](https://github.com/fcash-project/fcore/blob/master/LICENSE).
 
-Copyright 2013-2015 BitPay, Inc. Fcash is a trademark maintained by BitPay, Inc.
+Copyright 2013-2015 Fcash, Inc. Fcash is a trademark maintained by Fcash, Inc.

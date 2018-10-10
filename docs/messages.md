@@ -39,7 +39,7 @@ var messages = new Messages({network: Networks.testnet});
 
 ## List of Messages
 ### Version
-The version message (`ver`) is used on connection creation, to advertise the type of node. The remote node will respond with its version, and no communication is possible until both peers have exchanged their versions. By default, fcore advertises itself as named `bitcore` with the current version of the `fcash-p2p` package.
+The version message (`ver`) is used on connection creation, to advertise the type of node. The remote node will respond with its version, and no communication is possible until both peers have exchanged their versions. By default, fcore advertises itself as named `fcore` with the current version of the `fcash-p2p` package.
 
 ### VerAck
 Finishes the connection handshake started by the `ver` message.

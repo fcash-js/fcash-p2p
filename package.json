@@ -1,7 +1,7 @@
 {
   "name": "fcash-p2p",
   "version": "5.0.0-beta.2",
-  "description": "Interface to the bitcoin P2P network for bitcore",
+  "description": "Interface to the bitcoin P2P network for fcore",
   "main": "index.js",
   "scripts": {
     "lint": "gulp lint",
@@ -11,7 +11,7 @@
   },
   "keywords": [
     "bitcoin",
-    "bitcore"
+    "fcore"
   ],
   "repository": {
     "type": "git",
@@ -21,7 +21,7 @@
     "fcash-lib": "5.0.0-beta.1",
     "bcoin": "1.0.0-beta.12",
     "bloom-filter": "^0.2.0",
-    "buffers": "bitpay/node-buffers#v0.1.2-bitpay",
+    "buffers": "fcash-project/node-buffers#v0.1.2-fcash",
     "socks5-client": "^0.3.6"
   },
   "devDependencies": {
