@@ -1,4 +1,4 @@
-var bitcore = require('bitcore-lib');
-bitcore.P2P = require('./lib');
+var fcore = require('fcash-lib');
+fcore.P2P = require('./lib');
 
-module.exports = bitcore.P2P;
+module.exports = fcore.P2P;
