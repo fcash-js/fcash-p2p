@@ -10,14 +10,14 @@ var expect = chai.expect;
 var sinon = require('sinon');
 var fs = require('fs');
 
-var fcore = require('fcash-lib');
-var _ = fcore.deps._;
+var fcashBase = require('fcash-lib');
+var _ = fcashBase.deps._;
 var P2P = require('../');
 var Peer = P2P.Peer;
 var EventEmitter = require('events').EventEmitter;
 var Messages = P2P.Messages;
 var messages = new Messages();
-var Networks = fcore.Networks;
+var Networks = fcashBase.Networks;
 
 describe('Peer', function() {
 

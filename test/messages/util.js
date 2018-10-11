@@ -4,8 +4,8 @@
 
 var should = require('chai').should();
 var utils = require('../../lib/messages/utils');
-var fcore = require('fcash-lib');
-var BufferReader = fcore.encoding.BufferReader;
+var fcashBase = require('fcash-lib');
+var BufferReader = fcashBase.encoding.BufferReader;
 
 describe('Message Utils', function() {
 

@@ -4,12 +4,12 @@
 
 var should = require('chai').should();
 
-var fcore = require('fcash-lib');
+var fcashBase = require('fcash-lib');
 var P2P = require('../');
 var Inventory = P2P.Inventory;
-var BufferUtils = fcore.util.buffer;
-var BufferWriter = fcore.encoding.BufferWriter;
-var BufferReader = fcore.encoding.BufferReader;
+var BufferUtils = fcashBase.util.buffer;
+var BufferWriter = fcashBase.encoding.BufferWriter;
+var BufferReader = fcashBase.encoding.BufferReader;
 
 describe('Inventory', function() {
 

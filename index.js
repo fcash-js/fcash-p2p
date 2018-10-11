@@ -1,4 +1,4 @@
-var fcore = require('fcash-lib');
-fcore.P2P = require('./lib');
+var fcashBase = require('fcash-lib');
+fcashBase.P2P = require('./lib');
 
-module.exports = fcore.P2P;
+module.exports = fcashBase.P2P;

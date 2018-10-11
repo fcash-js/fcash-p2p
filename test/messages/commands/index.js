@@ -5,7 +5,7 @@ var expect = require('chai').expect;
 var P2P = require('../../../');
 var Messages = P2P.Messages;
 var sinon = require('sinon');
-var fcore = require('fcash-lib');
+var fcashBase = require('fcash-lib');
 
 describe('Command Messages', function() {
 
@@ -46,18 +46,18 @@ describe('Command Messages', function() {
   describe('Transaction', function() {
 
     it('should accept a transaction instance as an argument', function() {
-      var tx = new fcore.Transaction();
+      var tx = new fcashBase.Transaction();
       var message = messages.Transaction(tx);
-      message.transaction.should.be.instanceof(fcore.Transaction);
+      message.transaction.should.be.instanceof(fcashBase.Transaction);
     });
 
     it('should create a transaction instance', function() {
       var message = messages.Transaction();
-      message.transaction.should.be.instanceof(fcore.Transaction);
+      message.transaction.should.be.instanceof(fcashBase.Transaction);
     });
 
     it('version should remain the same', function() {
-      var tx = new fcore.Transaction();
+      var tx = new fcashBase.Transaction();
       var version = Number(tx.version);
       var message = messages.Transaction(tx);
       message.transaction.version.should.equal(version);
@@ -68,12 +68,12 @@ describe('Command Messages', function() {
   describe('Block', function() {
 
     it('should accept a block instance as an argument', function() {
-      var block = new fcore.Block({
+      var block = new fcashBase.Block({
         header: {},
         transactions: []
       });
       var message = messages.Block(block);
-      message.block.should.be.instanceof(fcore.Block);
+      message.block.should.be.instanceof(fcashBase.Block);
     });
 
   });

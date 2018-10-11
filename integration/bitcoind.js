@@ -6,19 +6,19 @@ var chai = require('chai');
 var should = chai.should();
 var sinon = require('sinon');
 
-var fcore = require('fcash-lib');
-var _ = fcore.deps._;
-var Random = fcore.crypto.Random;
-var BN = fcore.crypto.BN;
-var BufferUtil = fcore.util.buffer;
+var fcashBase = require('fcash-lib');
+var _ = fcashBase.deps._;
+var Random = fcashBase.crypto.Random;
+var BN = fcashBase.crypto.BN;
+var BufferUtil = fcashBase.util.buffer;
 var p2p = require('../');
 var Peer = p2p.Peer;
 var Pool = p2p.Pool;
-var Networks = fcore.Networks;
+var Networks = fcashBase.Networks;
 var Messages = p2p.Messages;
 var Inventory = p2p.Inventory;
-var Block = fcore.Block;
-var Transaction = fcore.Transaction;
+var Block = fcashBase.Block;
+var Transaction = fcashBase.Transaction;
 
 // config 
 var network = process.env.NETWORK === 'testnet' ? Networks.testnet : Networks.livenet;

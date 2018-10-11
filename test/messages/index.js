@@ -7,7 +7,7 @@ var Buffers = require('buffers');
 var P2P = require('../../');
 var Messages = P2P.Messages;
 var messages = new Messages();
-var fcore = require('fcash-lib');
+var fcashBase = require('fcash-lib');
 var Data = require('../data/messages'); //todo merge with commandData
 var commandData = require('../data/messages.json');
 
@@ -25,31 +25,31 @@ describe('Messages', function() {
 
   describe('@constructor', function() {
     it('sets properties correctly', function() {
-      var network = fcore.Networks.defaultNetwork;
+      var network = fcashBase.Networks.defaultNetwork;
       var messages = new Messages({
         network: network,
-        Block: fcore.Block,
-        Transaction: fcore.Transaction
+        Block: fcashBase.Block,
+        Transaction: fcashBase.Transaction
       });
       should.exist(messages.builder.commands);
       should.exist(messages.builder.constructors);
-      messages.builder.constructors.Block.should.equal(fcore.Block);
-      messages.builder.constructors.Transaction.should.equal(fcore.Transaction);
+      messages.builder.constructors.Block.should.equal(fcashBase.Block);
+      messages.builder.constructors.Transaction.should.equal(fcashBase.Transaction);
       messages.network.should.deep.equal(network);
     });
     it('network should be unique for each set of messages', function() {
       var messages = new Messages({
-        network: fcore.Networks.livenet
+        network: fcashBase.Networks.livenet
       });
       var messages2 = new Messages({
-        network: fcore.Networks.testnet
+        network: fcashBase.Networks.testnet
       });
-      messages.network.should.deep.equal(fcore.Networks.livenet);
-      messages2.network.should.deep.equal(fcore.Networks.testnet);
+      messages.network.should.deep.equal(fcashBase.Networks.livenet);
+      messages2.network.should.deep.equal(fcashBase.Networks.testnet);
       var message1 = messages.Version();
-      message1.network.should.deep.equal(fcore.Networks.livenet);
+      message1.network.should.deep.equal(fcashBase.Networks.livenet);
       var message2 = messages2.Version();
-      message2.network.should.deep.equal(fcore.Networks.testnet);
+      message2.network.should.deep.equal(fcashBase.Networks.testnet);
     });
   });
 
@@ -91,7 +91,7 @@ describe('Messages', function() {
       var name = messages.builder.commandsMap[command];
       it(name, function() {
         var message = messages[name]();
-        message.network.should.deep.equal(fcore.Networks.defaultNetwork);
+        message.network.should.deep.equal(fcashBase.Networks.defaultNetwork);
       });
     });
 
@@ -194,11 +194,11 @@ describe('Messages', function() {
 
   describe('#add', function() {
     it('should add a custom message', function() {
-      var network = fcore.Networks.defaultNetwork;
+      var network = fcashBase.Networks.defaultNetwork;
       var messages = new Messages({
         network: network,
-        Block: fcore.Block,
-        Transaction: fcore.Transaction
+        Block: fcashBase.Block,
+        Transaction: fcashBase.Transaction
       });
 
       var CustomMessage = function(arg, options) {

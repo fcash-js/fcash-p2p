@@ -1,15 +1,15 @@
-<img src="http://www.fcash.cash/css/images/fcash-p2p.svg" alt="fcore payment protocol" height="35" width="102">
+<img src="http://www.fcash.cash/css/images/fcash-p2p.svg" alt="fcash-base payment protocol" height="35" width="102">
 
 Fcash P2P
 =======
 
 [![NPM Package](https://img.shields.io/npm/v/fcash-p2p.svg?style=flat-square)](https://www.npmjs.org/package/fcash-p2p)
-[![Build Status](https://img.shields.io/travis/fcash-project/fcash-p2p.svg?branch=master&style=flat-square)](https://travis-ci.org/fcash-project/fcash-p2p)
-[![Coverage Status](https://img.shields.io/coveralls/fcash-project/fcash-p2p.svg?style=flat-square)](https://coveralls.io/r/fcash-project/fcash-p2p?branch=master)
+[![Build Status](https://img.shields.io/travis/fcash-js/fcash-p2p.svg?branch=master&style=flat-square)](https://travis-ci.org/fcash-js/fcash-p2p)
+[![Coverage Status](https://img.shields.io/coveralls/fcash-js/fcash-p2p.svg?style=flat-square)](https://coveralls.io/r/fcash-js/fcash-p2p?branch=master)
 
 `fcash-p2p` adds [Fcash protocol](https://en.bitcoin.it/wiki/Protocol_documentation) support for Fcash.
 
-See [the main fcore repo](https://github.com/fcash-project/fcore) for more information.
+See [the main fcash-base repo](https://github.com/fcash-js/fcash-base) for more information.
 
 ## Getting Started
 
@@ -45,14 +45,14 @@ peer.on('tx', function(message) {
 });
 ```
 
-Take a look at the [fcore guide](http://www.fcash.cash/guide/peer.html) on the usage of the `Peer` class.
+Take a look at the [fcash-base guide](http://www.fcash.cash/guide/peer.html) on the usage of the `Peer` class.
 
 ## Contributing
 
-See [CONTRIBUTING.md](https://github.com/fcash-project/fcore/blob/master/CONTRIBUTING.md) on the main fcore repo for information about how to contribute.
+See [CONTRIBUTING.md](https://github.com/fcash-js/fcash-base/blob/master/CONTRIBUTING.md) on the main fcash-base repo for information about how to contribute.
 
 ## License
 
-Code released under [the MIT license](https://github.com/fcash-project/fcore/blob/master/LICENSE).
+Code released under [the MIT license](https://github.com/fcash-js/fcash-base/blob/master/LICENSE).
 
 Copyright 2013-2015 Fcash, Inc. Fcash is a trademark maintained by Fcash, Inc.

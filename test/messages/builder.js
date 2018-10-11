@@ -3,7 +3,7 @@
 var should = require('chai').should();
 var P2P = require('../../');
 var builder = P2P.Messages.builder;
-var fcore = require('fcash-lib');
+var fcashBase = require('fcash-lib');
 
 describe('Messages Builder', function() {
 
@@ -18,9 +18,9 @@ describe('Messages Builder', function() {
     it('should return commands with customizations', function() {
       // instantiate
       var b = builder({
-        network: fcore.Networks.testnet,
-        Block: fcore.Block,
-        Transaction: fcore.Transaction
+        network: fcashBase.Networks.testnet,
+        Block: fcashBase.Block,
+        Transaction: fcashBase.Transaction
       });
       should.exist(b);
     });
