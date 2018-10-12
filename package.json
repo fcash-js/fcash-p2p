@@ -1,6 +1,6 @@
 {
   "name": "fcash-p2p",
-  "version": "5.0.0-beta.2",
+  "version": "5.0.1",
   "description": "Interface to the bitcoin P2P network for fcashBase",
   "main": "index.js",
   "scripts": {
